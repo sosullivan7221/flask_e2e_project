@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="static\styles.css">
+    <title> MySQL Patient Info Table</title>
+</head>
+
+<body>
+    <h1> MySQL Patient Table</h1>
+    <table>
+        <thead>
+            <tr>
+               <th> Patient_ID </th>
+               <th> First_Name </th>
+               <th> Last_Name </th> 
+               <th> Date_of_Birth </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for patient in data1 %}
+            <tr>
+                <td> {{patient.patient_id}} </td>
+                <td> {{patient.first_name}}</td>
+                <td> {{patient.last_name}}</td>
+                <td> {{patient.date_of_birth}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
