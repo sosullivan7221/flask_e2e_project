@@ -2,8 +2,14 @@ from sqlalchemy import create_engine, inspect, text
 import sqlalchemy
 import os
 from dotenv import load_dotenv 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for, redirect, session
+from authlib.integrations.flask_client import OAuth
+from authlib.common.security import generate_token
 
+load_dotenv()
+
+GOOGLE_CLIENT_ID = os.getenv('GOOGLE_CLIENT_ID')
+GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
 DB_HOST = os.getenv("DB_HOST")
 DB_DATABASE = os.getenv("DB_DATABASE")
 DB_USERNAME = os.getenv("DB_USERNAME")

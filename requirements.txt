@@ -1,0 +1,6 @@
+sqlalchemy
+os
+dotenv
+flask
+authlib
+faker
