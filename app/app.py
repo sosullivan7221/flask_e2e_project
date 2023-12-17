@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from flask import Flask, render_template, request, url_for, redirect, session
 from authlib.integrations.flask_client import OAuth
 from authlib.common.security import generate_token
-from db_functions import update_or_create_user
+from db_functions import update_or_create_user, get_db
 
 load_dotenv()
 
@@ -25,6 +25,7 @@ engine = create_engine(conn_string)
 app = Flask(__name__)
 app.secret_key =os.urandom(12)
 oauth = OAuth(app)
+get_db()
 
 @app.route('/')
 def index():
