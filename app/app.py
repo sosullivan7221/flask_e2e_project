@@ -60,10 +60,27 @@ def google_auth():
 @app.route('/patients')
 def patients():
     user = session.get('user')
+    first_name = request.args.get('first_name')
+    last_name = request.args.get('last_name')
+    patient_id = request.args.get('patient_id')
+    date_of_birth = request.args.get('date_of_birth')
     if user:
         with engine.connect() as connection:
-            query_1 = text('SELECT * FROM patient_info')
-            result_1 = connection.execute(query_1)
+            if first_name:
+                query_1 = text('SELECT * FROM patient_info WHERE first_name = :first_name')
+                result_1 = connection.execute(query_1, {"first_name": first_name})
+            elif last_name:
+                query_1 = text('SELECT * FROM patient_info WHERE last_name = :last_name')
+                result_1 = connection.execute(query_1, {"last_name": last_name})
+            elif patient_id:
+                query_1 = text('SELECT * FROM patient_info WHERE patient_id = :patient_id')
+                result_1 = connection.execute(query_1, {"patient_id": patient_id})
+            elif date_of_birth:
+                query_1 = text('SELECT * FROM patient_info WHERE date_of_birth = :date_of_birth')
+                result_1 = connection.execute(query_1, {"date_of_birth": date_of_birth})
+            else:
+                query_1 = text('SELECT * FROM patient_info')
+                result_1 = connection.execute(query_1)   
             table_1 = result_1.fetchall()
 
         return render_template('patients.html', data1=table_1, user=user)
