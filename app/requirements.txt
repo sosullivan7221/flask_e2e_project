@@ -4,3 +4,4 @@ dotenv
 flask
 authlib
 faker
+requests
