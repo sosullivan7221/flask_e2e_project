@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 # Initialize the database
-DATABASE = 'flash_e2e_project/app/users.db'
+DATABASE = 'flask_e2e_project/app/users.db'
 
 # search for user in database
 db = sqlite3.connect(DATABASE)
