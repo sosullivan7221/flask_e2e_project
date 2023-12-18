@@ -108,6 +108,17 @@ def patients():
         logging.error(f"Failed to redirect from google authenticator {e}")
         return('Failed to redirect. Contact site administrator if your account is external of the site network.')
 
+@app.route('/info')
+def info():
+    try:
+        logging.debug(f"Successfully reached user info page")
+        user = session.get('user')
+        return render_template ('info.html', user=user)
+    except Exception as e:
+        logging.error(f"Failed to reach user info endpoint {e}")
+        return ('Failed to reach user info endpoint. Please restart and try again.')
+
+
 @app.route('/logout')
 def logout():
     try:

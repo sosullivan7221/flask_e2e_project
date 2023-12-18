@@ -3,11 +3,29 @@
 
 <head>
     <link rel="stylesheet" href="static\styles.css">
-    <title> MySQL Patient Info Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title> Patient Registry</title>
 </head>
 
 <body>
-    <h1> MySQL Patient Table</h1>
+    <header class="bg-blue-500 p-4">
+        <h1 class="text-white text-3xl font-bold font-mono"> Patient Registry </h1>
+        <h1 class="text-white text-right font-mono"> Welcome, {{user.name}} </h1>
+        <h2 class="text-black text-right font-mono">
+            <a href="/info" class="logout-btn" style="text-decoration:none;">
+                <div class="btn-text">
+                    User Info
+                </div>
+            </a>
+        </h2>
+        <h2 class="text-black text-right font-mono">
+            <a href="/logout" class="logout-btn" style="text-decoration:none;">
+                <div class="btn-text">
+                    Logout
+                </div>
+            </a>
+        </h2>
+    </header>
     <table>
         <thead>
             <tr>

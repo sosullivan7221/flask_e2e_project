@@ -1,0 +1,101 @@
+INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO - werkzeug - [33mPress CTRL+C to quit[0m
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 19:58:13] "GET /?authuser=0 HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 19:58:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): accounts.google.com:443
+DEBUG - urllib3.connectionpool - https://accounts.google.com:443 "GET /.well-known/openid-configuration HTTP/1.1" 200 464
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 19:58:15] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://www.googleapis.com:443 "GET /oauth2/v3/certs HTTP/1.1" 200 743
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 19:58:17] "[32mGET /google/auth/?state=ho1mrhiYAxIbixOUlByEZflEensC31&code=4/0AfJohXkAN1-BIuSaRlyQpVt9OHbWZY41JhFXh12urFFSeh9V7plS0quHdYfgejoSiJGIJw&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 19:58:18] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 19:58:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 19:58:27] "[33mGET /info HTTP/1.1[0m" 404 -
+INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO - werkzeug - [33mPress CTRL+C to quit[0m
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:02:44] "GET /?authuser=0 HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:02:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): accounts.google.com:443
+DEBUG - urllib3.connectionpool - https://accounts.google.com:443 "GET /.well-known/openid-configuration HTTP/1.1" 200 464
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:02:46] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://www.googleapis.com:443 "GET /oauth2/v3/certs HTTP/1.1" 200 743
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:02:48] "[32mGET /google/auth/?state=CiuTbq2ue2i2KKVkm91d5ltRasp15j&code=4/0AfJohXmDNH91PNMHEx8eIpo0McHXE72unQ1GQqrgtDSov_n0iPvtdO0eKOGx2IwBzVcBYA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/userinfo.email&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:02:49] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:02:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:03:02] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:03:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO - werkzeug - [33mPress CTRL+C to quit[0m
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:11:52] "GET /?authuser=0 HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:11:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): accounts.google.com:443
+DEBUG - urllib3.connectionpool - https://accounts.google.com:443 "GET /.well-known/openid-configuration HTTP/1.1" 200 464
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:11:53] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://www.googleapis.com:443 "GET /oauth2/v3/certs HTTP/1.1" 200 738
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:11:56] "[32mGET /google/auth/?state=h8fiDX513jhQkhn7hnjkX7Ie3JCHXz&code=4/0AfJohXmf01oqdgaqobEcLHiHg2RaXEm12XzRqV4KnT1s8HmzRw6WM4IxqVN29YIwd7qb6A&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:11:56] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:11:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:07] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully logged out
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:11] "[32mGET /logout HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:11] "GET / HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:13] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:15] "[32mGET /google/auth/?state=u1fpkAu4LyPllLg1lQXxe4ZfuBkb81&code=4/0AfJohXnc7FGFroWQ61HSr2hnJdLQHQwFdAjuz-0kfdvbOZfX4E40knJXC5uq_DNyIEINcQ&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:15] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:18] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:12:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO - werkzeug - [33mPress CTRL+C to quit[0m
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:33] "GET /?authuser=0 HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): accounts.google.com:443
+DEBUG - urllib3.connectionpool - https://accounts.google.com:443 "GET /.well-known/openid-configuration HTTP/1.1" 200 464
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:35] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://www.googleapis.com:443 "GET /oauth2/v3/certs HTTP/1.1" 200 744
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:37] "[32mGET /google/auth/?state=tfEBzdQU7HSPMomRpr4vg2jqIVL0eO&code=4/0AfJohXkKas8n4Swr007wyxoHZYFKWLqqli_rxEmVzZ4nf7_TT3kTBeNPCrv76_W5LAV3_g&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:37] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:40] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:46] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
