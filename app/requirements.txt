@@ -5,3 +5,4 @@ flask
 authlib
 faker
 requests
+logging
