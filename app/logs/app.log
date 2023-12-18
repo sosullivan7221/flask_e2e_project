@@ -99,3 +99,98 @@ INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:40] "[36mGET /static/styles.
 DEBUG - root - Successfully redirected to patient directory
 INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:46] "GET /patients HTTP/1.1" 200 -
 INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:19:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO - werkzeug - [33mPress CTRL+C to quit[0m
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:19] "GET /?authuser=0 HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): accounts.google.com:443
+DEBUG - urllib3.connectionpool - https://accounts.google.com:443 "GET /.well-known/openid-configuration HTTP/1.1" 200 464
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:21] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://www.googleapis.com:443 "GET /oauth2/v3/certs HTTP/1.1" 200 738
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:23] "[32mGET /google/auth/?state=xJ2qg4eIIxL6GRlVXI5SvDWqYecthc&code=4/0AfJohXl_gDxSZPYda6u5r_Dkx6B7ZV6ghRQ9UoQSFFFrg_72mrpwXFxI3jfE1XVOaxyNpw&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:23] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:27] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:29] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:32] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:34] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:23:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO - werkzeug - [33mPress CTRL+C to quit[0m
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:07] "GET /?authuser=0 HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): accounts.google.com:443
+DEBUG - urllib3.connectionpool - https://accounts.google.com:443 "GET /.well-known/openid-configuration HTTP/1.1" 200 464
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:08] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://www.googleapis.com:443 "GET /oauth2/v3/certs HTTP/1.1" 200 743
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:11] "[32mGET /google/auth/?state=cucPSRkjrqsyGAnlMt0wQUISqKdb04&code=4/0AfJohXl3QMvb4Fv5P6dGdnCYDFAPDHcVqLcRoPDVivndOX6B3VGlv7gOu2JR6TMDy20MqA&scope=email+profile+https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:11] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:15] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:18] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:27] "GET /patients?first_name=Amber HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:28] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully logged out
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:30] "[32mGET /logout HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:30] "GET / HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 20:40:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO - werkzeug - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.88.0.3:5000
+INFO - werkzeug - [33mPress CTRL+C to quit[0m
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:42] "GET /?authuser=0 HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): accounts.google.com:443
+DEBUG - urllib3.connectionpool - https://accounts.google.com:443 "GET /.well-known/openid-configuration HTTP/1.1" 200 464
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:43] "[32mGET /google/ HTTP/1.1[0m" 302 -
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG - urllib3.connectionpool - https://www.googleapis.com:443 "GET /oauth2/v3/certs HTTP/1.1" 200 745
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:45] "[32mGET /google/auth/?state=KxUuxulCpIh5uhg7tAc5xBO4HYp8SA&code=4/0AfJohXm56FERCgRtt8Jgf6lYR8zhlEuIElJlD4DzytKWNIfgO1MnwNnrTBrN3EWrUHCfAA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/userinfo.email&authuser=0&hd=stonybrook.edu&prompt=none HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully redirected to patient directory
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:46] "GET /patients HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully reached user info page
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:54] "GET /info HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully logged out
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:55] "[32mGET /logout HTTP/1.1[0m" 302 -
+DEBUG - root - Successfully reached homepage
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:56] "GET / HTTP/1.1" 200 -
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+DEBUG - root - Successfully generated Google session
+INFO - werkzeug - 127.0.0.1 - - [18/Dec/2023 21:53:59] "[32mGET /google/ HTTP/1.1[0m" 302 -

@@ -1,8 +1,7 @@
 sqlalchemy
-os
-dotenv
-flask
+python-dotenv
+Flask
 authlib
 faker
 requests
-logging
+pymysql

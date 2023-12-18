@@ -10,7 +10,7 @@ import logging
 
 logging.basicConfig(
     level=logging.DEBUG,
-    filename="/home/sean_osullivan/flask_e2e_project/logs/app.log",
+    filename="logs/app.log",
     filemode="a",
     format='%(levelname)s - %(name)s - %(message)s'
 )
@@ -130,4 +130,4 @@ def logout():
         return ('Failed to logout. Please close out of app.')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False, host='0.0.0.0', port=5000)
